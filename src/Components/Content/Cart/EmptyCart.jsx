@@ -7,7 +7,7 @@ function EmptyCart({baseLink}) {
         <div className="container">
             <div className="empty-cart">
                 <div className="empty-cart-img">
-                    <img src="/images/cart/empty_cart.png" alt="" />
+                    <img src="images/cart/empty_cart.png" alt="" />
                 </div>
                 <span className="empty-cart-text" >Your cart is empty</span>
                 <div className="empty-cart-link">
