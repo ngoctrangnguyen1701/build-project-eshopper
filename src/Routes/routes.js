@@ -10,42 +10,43 @@ import Auth from '../Pages/Auth/Auth';
 
 const routes = [
     {
-        path: '/',
+        path: '/build-project-eshopper/',
         exact: true,
         component: Home
     },
     {
-        path: '/products/:id',
+        path: '/build-project-eshopper/products/:id',
         exact: true,
         component: ProductDetails
     },
     {
-        path: '/category/:categoryName',
+        path: '/build-project-eshopper/category/:categoryName',
         exact: true,
         component: ProductsByCategory
     },
     {
-        path: '/cart',
+        path: '/build-project-eshopper/cart',
         exact: true,
         component: Cart
     },
     {
-        path: '/blog-list',
+        path: '/build-project-eshopper/blog-list',
         exact: true,
         component: BlogList
     },
     {
-        path: '/blog-single',
+        path: '/build-project-eshopper/blog-single',
         exact: true,
         component: BlogSingle
     },
     {
-        path: '/contact',
+        path: '/build-project-eshopper/contact',
         exact: true,
         component: Contact
     },
+
     {
-        path: '/auth',
+        path: '/build-project-eshopper/auth',
         exact: true,
         component: Auth
     },
