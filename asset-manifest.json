@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/build-project-eshopper/static/css/main.2a2f359e.chunk.css",
+    "main.js": "/build-project-eshopper/static/js/main.cd65fbb2.chunk.js",
+    "main.js.map": "/build-project-eshopper/static/js/main.cd65fbb2.chunk.js.map",
+    "runtime-main.js": "/build-project-eshopper/static/js/runtime-main.8cb52610.js",
+    "runtime-main.js.map": "/build-project-eshopper/static/js/runtime-main.8cb52610.js.map",
+    "static/js/2.e5630ecc.chunk.js": "/build-project-eshopper/static/js/2.e5630ecc.chunk.js",
+    "static/js/2.e5630ecc.chunk.js.map": "/build-project-eshopper/static/js/2.e5630ecc.chunk.js.map",
+    "index.html": "/build-project-eshopper/index.html",
+    "static/css/main.2a2f359e.chunk.css.map": "/build-project-eshopper/static/css/main.2a2f359e.chunk.css.map",
+    "static/js/2.e5630ecc.chunk.js.LICENSE.txt": "/build-project-eshopper/static/js/2.e5630ecc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cb52610.js",
+    "static/js/2.e5630ecc.chunk.js",
+    "static/css/main.2a2f359e.chunk.css",
+    "static/js/main.cd65fbb2.chunk.js"
+  ]
+}
