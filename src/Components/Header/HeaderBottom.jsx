@@ -7,16 +7,16 @@ const buttonStyle = {
     border: "none"
 }
 function HeaderBottom(props) {
-    const { onSetDefault, onSearch, keyword, setKeyword } = props;
+    const { onSetDefault, onSearch, keyword, setKeyword, baseLink } = props;
     const matchHome = useRouteMatch({
-        path: '/',
+        path: baseLink,
         exact: true
     })
     //console.log('matchHome: ', matchHome);
 
-    const matchContact = useRouteMatch('/contact');
+    const matchContact = useRouteMatch(`${baseLink}/contact`);
     //console.log('matchContact: ', matchContact);
-    const matchBlog = useRouteMatch(['/blog-list', '/blog-single']);
+    const matchBlog = useRouteMatch([`${baseLink}/blog-list`, `${baseLink}/blog-single`]);
 
 
     return (
@@ -36,7 +36,7 @@ function HeaderBottom(props) {
                             <ul className="nav navbar-nav collapse navbar-collapse">
                                 <li>
                                     <Link
-                                        to="/" 
+                                        to={baseLink}
                                         className={matchHome ? "active" : ''}
                                         onClick={onSetDefault}
                                     >Home</Link>
@@ -47,13 +47,13 @@ function HeaderBottom(props) {
                                         className={matchBlog ? "active" : ''}                            
                                     >Blog<i className="fa fa-angle-down"></i></Link>
                                     <ul role="menu" className="sub-menu">
-                                        <li><Link to="/blog-list">Blog List</Link></li>
-                                        <li><Link to="/blog-single">Blog Single</Link></li>
+                                        <li><Link to={`${baseLink}}/blog-list`}>Blog List</Link></li>
+                                        <li><Link to={`${baseLink}/blog-single`}>Blog Single</Link></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <Link 
-                                        to="/contact"
+                                        to={`${baseLink}/contact`}
                                         className={matchContact ? "active" : ''}
                                     >Contact</Link>
                                 </li>
@@ -67,7 +67,7 @@ function HeaderBottom(props) {
                                 onChange={e=>setKeyword(e.target.value)}
                             />
                             <Link
-                                to="/" 
+                                to={baseLink}
                                 onClick={()=>onSearch(keyword)}
                             >
                                 <button style={buttonStyle}><img src="images/home/searchicon.png" alt=""/></button>                                

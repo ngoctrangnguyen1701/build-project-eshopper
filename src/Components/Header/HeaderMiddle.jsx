@@ -3,7 +3,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 const activeStyle = {color: '#fe980f'};
 
 function HeaderMiddle(props) {
-    const { onSetDefault, numBasket, menu } = props;
+    const { onSetDefault, numBasket, menu, baseLink } = props;
 
     return (
         <div className="header-middle">
@@ -12,7 +12,7 @@ function HeaderMiddle(props) {
                     <div className="col-sm-4">
                         <div className="logo pull-left">
                             <Link
-                                to="/"
+                                to={baseLink}
                                 onClick={onSetDefault}
                             >
                                 <img src="images/home/logo.png" alt="" />
@@ -25,8 +25,8 @@ function HeaderMiddle(props) {
                                     <span className="caret"></span>
                                 </button>
                                 <ul className="dropdown-menu">
-                                    <li><Link to="#">Canada</Link></li>
-                                    <li><Link to="#">UK</Link></li>
+                                    <li><Link to="/page404">Canada</Link></li>
+                                    <li><Link to="/page404">UK</Link></li>
                                 </ul>
                             </div>
 
@@ -36,8 +36,8 @@ function HeaderMiddle(props) {
                                     <span className="caret"></span>
                                 </button>
                                 <ul className="dropdown-menu">
-                                    <li><Link to="#">Canadian Dollar</Link></li>
-                                    <li><Link to="#">Pound</Link></li>
+                                    <li><Link to="/page404">Canadian Dollar</Link></li>
+                                    <li><Link to="/page404">Pound</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -48,8 +48,8 @@ function HeaderMiddle(props) {
                                 {menu}
                                 <li>
                                     <Link 
-                                        to="/cart"
-                                        style={useRouteMatch('/cart') && activeStyle}
+                                        to={`${baseLink}/cart`}
+                                        style={useRouteMatch(`${baseLink}/cart`) && activeStyle}
                                     >
                                         <i className="fa fa-shopping-cart"></i> Cart
                                         {numBasket !== 0 && <div className="num-Basket">{numBasket}</div>}

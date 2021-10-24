@@ -7,7 +7,7 @@ const handleText = {
 };
 
 function ProductItem(props) {
-    const { product, onAddToCart, elementAddToCart, onToggleWishList, isBeLoved } = props;
+    const { product, onAddToCart, elementAddToCart, onToggleWishList, isBeLoved, baseLink } = props;
     const { id, title, price, image } = product;
 
     const wishList = <i className="fas fa-heart text-danger"></i>
@@ -50,7 +50,7 @@ function ProductItem(props) {
                             </a>
                         </li>
                         <li>
-                            <Link to={`/products/${id}`}>
+                            <Link to={`${baseLink}/products/${id}`}>
                                 <i className="fa fa-plus-square"></i>Watch details
                             </Link>
                         </li>

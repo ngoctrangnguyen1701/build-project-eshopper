@@ -21,7 +21,7 @@ function BlogSingle(props) {
                             <i className="fa fa-star-half-o"></i>
                         </span>
                     </div>
-                    <Link to="">
+                    <Link to="/page404">
                         <img src="images/blog/blog-one.jpg" alt=""/>
                     </Link>
                     <p>
@@ -39,8 +39,8 @@ function BlogSingle(props) {
                     </p>
                     <div className="pager-area">
                         <ul className="pager pull-right">
-                            <li><Link to="#">Pre</Link></li>
-                            <li><Link to="#">Next</Link></li>
+                            <li><Link to="/page404">Pre</Link></li>
+                            <li><Link to="/page404">Next</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -67,11 +67,11 @@ function BlogSingle(props) {
             </div>
 
             <div className="socials-share">
-                <Link to=""><img src="images/blog/socials.png" alt=""/></Link>
+                <Link to="/page404"><img src="images/blog/socials.png" alt=""/></Link>
             </div>
 
             <div className="media commnets">
-                <Link to="" className="pull-left">
+                <Link to="/page404" className="pull-left">
                     <img className="media-object" src="images/blog/man-one.jpg" alt=""/>
                 </Link>
                 <div className="media-body">

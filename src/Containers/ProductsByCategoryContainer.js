@@ -12,6 +12,7 @@ import sortByPrice from '../Modules/sortByPrice';
 import filterPrice from '../Modules/filterPrice';
 import wishListAction from '../Redux/Action/WishList/actionCreators';
 import { useEffect } from 'react';
+import baseLink from '../BaseLink/baseLink';
 
 
 function ProductsByCategoryContainer(props) {
@@ -80,7 +81,7 @@ function ProductsByCategoryContainer(props) {
         3,
         ProductItem,
         page,
-        {onAddToCart, elementAddToCart, onToggleWishList, isBeLoved}
+        {onAddToCart, elementAddToCart, onToggleWishList, isBeLoved, baseLink}
     ];
     const { elementProduct, pagesNumber } = produts_Sort_By_Page(...argument);
 

@@ -8,7 +8,7 @@ import { useState } from 'react';
 import MenuNoLogIn from '../Components/Header/MenuNoLogIn';
 import MenuLogedIn from '../Components/Header/MenuLogedIn';
 import authAction from '../Redux/Action/Auth/actionCreators';
-
+import baseLink from '../BaseLink/baseLink';
 
 
 function HeaderContainer(props) {
@@ -32,7 +32,6 @@ function HeaderContainer(props) {
         dispatch(productAction.set_Page(1));
         dispatch(productAction.filter_price('all'));
     };
-
     return (
         <Header>
             <HeaderTop />
@@ -42,13 +41,15 @@ function HeaderContainer(props) {
                 //thì sẽ trả lại cho thuộc tính page = 1 nằm trong reducer của product
                 //để khi click lại vào trang Home, các sản phẩm sẽ hiển thị bắt đầu từ trang 1
                 //và filter giá tiền cũng bắt đầu từ 'all'
-                menu={token ? <MenuLogedIn onLogOut={onLogOut} /> : <MenuNoLogIn />}
+                menu={token ? <MenuLogedIn onLogOut={onLogOut} baseLink={baseLink}/> : <MenuNoLogIn baseLink={baseLink}/>}
+                baseLink={baseLink}
             />
             <HeaderBottom
                 onSetDefault={onSetDefault}
                 onSearch={onSearch}
                 keyword={keyword}
                 setKeyword={setKeyword}
+                baseLink={baseLink}
             />
         </Header>
     );

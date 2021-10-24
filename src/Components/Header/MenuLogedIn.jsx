@@ -3,25 +3,25 @@ import { Link, useRouteMatch } from 'react-router-dom';
 const activeStyle = {color: '#fe980f'};
 
 function MenuLogedIn(props) {
-    const { onLogOut } = props;
+    const { onLogOut, baseLink } = props;
 
     return (
         <>
             <li>
                 <Link
-                    to="/account"
-                    style={useRouteMatch('/account') && activeStyle}
+                    to={`${baseLink}/account`}
+                    style={useRouteMatch(`${baseLink}/account`) && activeStyle}
                 ><i className="fa fa-user"></i> Account</Link>
             </li>
             <li>
                 <Link 
-                    to="/wishlist"
-                    style={useRouteMatch('/wishlist') && activeStyle}
+                    to={`${baseLink}/wishlist`}
+                    style={useRouteMatch(`${baseLink}/wishlist`) && activeStyle}
                     ><i className="fa fa-star"></i> Wishlist</Link>
             </li>
             <li>
                 <Link
-                    to="/auth"
+                    to={`${baseLink}/auth`}
                     onClick={onLogOut}
                 >
                     <i className="fas fa-lock-open"></i> Log out

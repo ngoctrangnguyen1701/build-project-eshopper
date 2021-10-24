@@ -6,6 +6,7 @@ import CartItem from '../Components/Content/Cart/CartItem';
 import EmptyCart from '../Components/Content/Cart/EmptyCart';
 import { useDispatch, useSelector } from 'react-redux';
 import cartAction from '../Redux/Action/Cart/actionCreators';
+import baseLink from '../BaseLink/baseLink';
 
 
 function CartContainer(props) {
@@ -38,6 +39,7 @@ function CartContainer(props) {
                 quantity={item.quantity}
                 onDelete={()=>dispatch(cartAction.delete_Product(item.product.id, item.quantity, token))}
                 onChangeQuantity={onChangeQuantity}
+                baseLink={baseLink}
             />
         ));
         
@@ -61,7 +63,7 @@ function CartContainer(props) {
 
     return (
         <>
-            {quantityInCart ? <Cart/> : <EmptyCart/>}
+            {quantityInCart ? <Cart/> : <EmptyCart baseLink={baseLink}/>}
         </>
     );
 }

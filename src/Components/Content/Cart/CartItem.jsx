@@ -6,17 +6,17 @@ const imageStyle = {
 };
 
 function CartItem(props) {
-    const { quantity, product, onDelete, onChangeQuantity } = props;
+    const { quantity, product, onDelete, onChangeQuantity, baseLink } = props;
     const { id, title, price, image } = product;
     return (
         <tr>
             <td>
-                <Link to={`/products/${id}`}>
+                <Link to={`${baseLink}/products/${id}`}>
                     <img src={image} alt={title} style={imageStyle}/>
                 </Link>
             </td>
             <td className="cart_description">
-                <Link to={`/products/${id}`}>{title}</Link>
+                <Link to={`${baseLink}/products/${id}`}>{title}</Link>
             </td>
             <td className="cart_price">
                 <span style={{fontSize: "16px"}}>${price}</span>

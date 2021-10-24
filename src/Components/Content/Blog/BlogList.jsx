@@ -21,7 +21,7 @@ function BlogList(props) {
                                 <i className="fa fa-star-half-o"></i>
                         </span>
                     </div>
-                    <Link to="">
+                    <Link to="/page404">
                         <img src="images/blog/blog-one.jpg" alt="" />
                     </Link>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -43,7 +43,7 @@ function BlogList(props) {
                             <i className="fa fa-star-half-o"></i>
                         </span>
                     </div>
-                    <Link to="">
+                    <Link to="/page404">
                         <img src="images/blog/blog-two.jpg" alt="" />
                     </Link>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -65,7 +65,7 @@ function BlogList(props) {
                             <i className="fa fa-star-half-o"></i>
                         </span>
                     </div>
-                    <Link to="">
+                    <Link to="/page404">
                         <img src="images/blog/blog-three.jpg" alt="" />
                     </Link>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -73,10 +73,10 @@ function BlogList(props) {
                 </div>
                 <div className="pagination-area">
                     <ul className="pagination">
-                        <li><Link to="" className="active">1</Link></li>
-                        <li><Link to="">2</Link></li>
-                        <li><Link to="">3</Link></li>
-                        <li><Link to=""><i className="fa fa-angle-double-right"></i></Link></li>
+                        <li><Link to="/page404" className="active">1</Link></li>
+                        <li><Link to="/page404">2</Link></li>
+                        <li><Link to="/page404">3</Link></li>
+                        <li><Link to="/page404"><i className="fa fa-angle-double-right"></i></Link></li>
                     </ul>
                 </div>
             </div>

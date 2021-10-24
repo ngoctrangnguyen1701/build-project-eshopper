@@ -1,3 +1,4 @@
+import baseLink from '../BaseLink/baseLink';
 import Home from '../Pages/Home/Home';
 import ProductDetails from '../Pages/ProductDetails/ProductDetails';
 import ProductsByCategory from '../Pages/ProductsByCategory/ProductsByCategory';
@@ -10,49 +11,47 @@ import Auth from '../Pages/Auth/Auth';
 
 const routes = [
     {
-        path: '/build-project-eshopper/',
+        path: `${baseLink}`,
         exact: true,
         component: Home
     },
     {
-        path: '/build-project-eshopper/products/:id',
+        path: `${baseLink}/products/:id`,
         exact: true,
         component: ProductDetails
     },
     {
-        path: '/build-project-eshopper/category/:categoryName',
+        path: `${baseLink}/category/:categoryName`,
         exact: true,
         component: ProductsByCategory
     },
     {
-        path: '/build-project-eshopper/cart',
+        path: `${baseLink}/cart`,
         exact: true,
         component: Cart
     },
     {
-        path: '/build-project-eshopper/blog-list',
+        path: `${baseLink}/blog-list`,
         exact: true,
         component: BlogList
     },
     {
-        path: '/build-project-eshopper/blog-single',
+        path: `${baseLink}/blog-single`,
         exact: true,
         component: BlogSingle
     },
     {
-        path: '/build-project-eshopper/contact',
+        path: `${baseLink}/contact`,
         exact: true,
         component: Contact
     },
-
     {
-        path: '/build-project-eshopper/auth',
+        path: `${baseLink}/auth`,
         exact: true,
         component: Auth
     },
     {
         path: '*',
-        exact: false,
         component: Page404
     },
 ];

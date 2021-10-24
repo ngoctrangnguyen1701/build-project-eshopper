@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import './emptyCart.scss';
 
-function EmptyCart(props) {
+function EmptyCart({baseLink}) {
+
     return (
         <div className="container">
             <div className="empty-cart">
@@ -10,7 +11,7 @@ function EmptyCart(props) {
                 </div>
                 <span className="empty-cart-text" >Your cart is empty</span>
                 <div className="empty-cart-link">
-                    <Link to="/">Continue shopping</Link>
+                    <Link to={baseLink}>Continue shopping</Link>
                 </div>
             </div>
         </div>

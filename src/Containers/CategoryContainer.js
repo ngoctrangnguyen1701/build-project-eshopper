@@ -4,6 +4,8 @@ import CategoryItem from '../Components/LeftSidebar/CategoryItem';
 import Loader from '../Components/Loader/Loader';
 import MessageError from '../Components/MessageError/MessageError';
 import products_By_Category from '../Redux/Action/ProductsByCategory/actionCreators';
+import baseLink from '../BaseLink/baseLink';
+
 
 function CategoryContainer(props) {
     const dispatch = useDispatch();
@@ -25,6 +27,7 @@ function CategoryContainer(props) {
                 key={index}
                 categoryName={item}
                 onSetDefault={onSetDefault}
+                baseLink={baseLink}
             />)
         );
     };

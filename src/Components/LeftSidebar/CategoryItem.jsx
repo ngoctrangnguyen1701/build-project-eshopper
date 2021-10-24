@@ -2,7 +2,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 
 
 function CategoryItem(props) {
-    const { categoryName, onSetDefault } = props;
+    const { categoryName, onSetDefault, baseLink } = props;
     const match = useRouteMatch(`/category/${categoryName}`);
     //console.log(match);
     
@@ -15,7 +15,7 @@ function CategoryItem(props) {
                 <div className={match ? 'category-active' : ''}>
                     <h4 className="panel-title">
                         <Link
-                            to={`/category/${categoryName}`}
+                            to={`${baseLink}/category/${categoryName}`}
                             onClick={onSetDefault}
                             style={match && {color: "#fff"}}
                         >
