@@ -10,47 +10,42 @@ import Auth from '../Pages/Auth/Auth';
 
 const routes = [
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/',
+        path: '/',
         exact: true,
         component: Home
     },
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/products/:id',
+        path: '/products/:id',
         exact: true,
         component: ProductDetails
     },
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/category/:categoryName',
+        path: '/category/:categoryName',
         exact: true,
         component: ProductsByCategory
     },
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/cart',
+        path: '/cart',
         exact: true,
         component: Cart
     },
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/blog-list',
+        path: '/blog-list',
         exact: true,
         component: BlogList
     },
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/blog-single',
+        path: '/blog-single',
         exact: true,
         component: BlogSingle
     },
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/contact',
+        path: '/contact',
         exact: true,
         component: Contact
     },
     {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/cart',
-        exact: true,
-        component: Cart
-    },
-    {
-        path: 'https://ngoctrangnguyen1701.github.io/build-project-eshopper/auth',
+        path: '/auth',
         exact: true,
         component: Auth
     },
