@@ -47,7 +47,7 @@ function HeaderBottom(props) {
                                         className={matchBlog ? "active" : ''}                            
                                     >Blog<i className="fa fa-angle-down"></i></Link>
                                     <ul role="menu" className="sub-menu">
-                                        <li><Link to={`${baseLink}}/blog-list`}>Blog List</Link></li>
+                                        <li><Link to={`${baseLink}/blog-list`}>Blog List</Link></li>
                                         <li><Link to={`${baseLink}/blog-single`}>Blog Single</Link></li>
                                     </ul>
                                 </li>

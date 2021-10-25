@@ -3,7 +3,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 
 function CategoryItem(props) {
     const { categoryName, onSetDefault, baseLink } = props;
-    const match = useRouteMatch(`/category/${categoryName}`);
+    const match = useRouteMatch(`${baseLink}/category/${categoryName}`);
     //console.log(match);
     
     return (
