@@ -42,10 +42,10 @@ function HeaderBottom(props) {
                                     >Home</Link>
                                 </li>
                                 <li className="dropdown">
-                                    <Link
-                                        to="#"
+                                    <a
+                                        href="javascript:void(0)"
                                         className={matchBlog ? "active" : ''}                            
-                                    >Blog<i className="fa fa-angle-down"></i></Link>
+                                    >Blog<i className="fa fa-angle-down"></i></a>
                                     <ul role="menu" className="sub-menu">
                                         <li><Link to={`${baseLink}/blog-list`}>Blog List</Link></li>
                                         <li><Link to={`${baseLink}/blog-single`}>Blog Single</Link></li>
