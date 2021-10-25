@@ -7,11 +7,12 @@ function LogIn(props) {
         setIsDisplaySignUp, showLoading, 
         isSignUp, token, 
         onRememberLogin,
+        baseLink
     } = props;
 
     return (
         <>
-            {token && <Redirect to='/' />}
+            {token && <Redirect to={baseLink} />}
             {/* nếu có token, tức là đã login thành công thì sẽ chuyển hướng về trang Home */}
 
             <div className="col-sm-4">

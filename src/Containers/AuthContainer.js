@@ -4,10 +4,11 @@ import Auth from '../Components/Content/Auth/Auth';
 import LogIn from '../Components/Content/Auth/LogIn';
 import SignUp from '../Components/Content/Auth/SignUp';
 import authAction from '../Redux/Action/Auth/actionCreators';
+import baseLink from '../BaseLink/baseLink';
 
 
 function AuthContainer(props) {
-    const { isSignUp, message, showLoading, token, /* isRemember */ } = useSelector(state => state.auth);
+    const { isSignUp, message, showLoading, token, } = useSelector(state => state.auth);
     const dispatch = useDispatch();
     const [isDisplaySignUp, setIsDisplaySignUp] = useState(false);
     
@@ -32,7 +33,7 @@ function AuthContainer(props) {
                         isSignUp={isSignUp}
                         token={token}
                         onRememberLogin={onRememberLogin}
-                        /* isRemember={isRemember} */
+                        baseLink={baseLink}
                     />
                 )
             }
