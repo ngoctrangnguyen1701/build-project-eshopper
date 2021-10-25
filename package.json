@@ -1,6 +1,6 @@
 {
   "name": "build-project-eshopper",
-  "homepage": "https://ngoctrangnguyen1701.github.io/build-project-eshopper",
+  "homepage": "/build-project-eshopper",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

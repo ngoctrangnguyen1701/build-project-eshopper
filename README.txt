@@ -1,5 +1,5 @@
-When 'npm start', remove line "homepage": "https://ngoctrangnguyen1701.github.io/build-project-eshopper"
+When 'npm start', change to "homepage": "/build-project-eshopper"
 in file package.json
 
-When 'npm run deploy', add line "homepage": "https://ngoctrangnguyen1701.github.io/build-project-eshopper"
+When 'npm run deploy', change to "homepage": "https://ngoctrangnguyen1701.github.io/build-project-eshopper"
 in file package.json, and name project same repository's name on github
